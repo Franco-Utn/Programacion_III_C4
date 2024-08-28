@@ -1,0 +1,198 @@
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    height: 100px;
+    background-color: beige;
+    align-content: center;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    margin-bottom: 1px;
+    }
+
+h1 {
+    font-size: 2.5rem;
+    color: #1d1b1b;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/*Div contenedor*/
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(231, 231, 143, 0.747); 
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    border-radius: 8px;
+}
+
+/*Titulos secciones*/
+.section-title {
+    font-size: 1.5rem;
+    color: #000000;
+    border-bottom: 2px solid #333; /* Línea debajo del título */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/*Propiedades de Texto Css*/
+
+.content-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* p*/
+.description-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+/* blockquote */
+.styled-quote {
+    font-size: 1.4rem;
+    text-align: center;
+    font-style: italic;
+    color: #000000;
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #888;
+    background-color: #88888844;
+}
+
+/* Estilos para las cajas */
+.box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 2px solid #ccc;
+    background-color: #e9e9e9;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja destacada */
+.box-2 {
+    border: 4px solid #ff7f50; /* Borde más grueso */
+    background-color: #ffe4c4; /* Fondo diferente */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+/* Estilos para el contenedor relativo */
+.relativo {
+    position: relative;
+    top: 20px; /* Ajusta la posición desde la parte superior */
+    left: 0px; /* Ajusta la posición desde la izquierda */
+    background-color: #d1e7dd;
+    padding: 20px;
+    margin-bottom: 50px; /* Margen inferior para evitar solapamientos */
+    border: 2px solid #28a745;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la caja absoluta */
+.absoluto {
+    position: absolute;
+    right: 20px; /* Ajusta la posición desde la parte superior del contenedor relativo */
+    left: 20px; /* Ajusta la posición desde la izquierda del contenedor relativo */
+    background-color: #ffc107;
+    padding: 10px;
+    border: 2px solid #dc3545;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste de columnas automático */
+    gap: 1rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.grid-item {
+    background-color: #6c757d; /* Fondo gris */
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+/* Animación y transiciones */
+
+/* Div cuadrado con transición de color al hacer hover */
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #6c757d;
+    margin-bottom: 2rem;
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: #28a745; /* Cambia el color al hacer hover */
+}
+
+/* Div que se mueve de izquierda a derecha de manera continua */
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    animation: moverDerecha 3s infinite linear;
+}
+/*footer*/
+footer{
+    text-align: center;
+    height: 100px;
+    background-color: beige;
+    align-content: center;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    margin-bottom: 1px;
+}
+h2 {
+    font-size: 2.5rem;
+    color: #1d1b1b;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* Definición de la animación con @keyframes */
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        background-color: #333; /* Cambia el fondo del body en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente del encabezado */
+    }
+
+    .content-wrapper {
+        width: 90%; /* Ajusta el ancho del contenido para pantallas pequeñas */
+        padding: 1rem; /* Reduce el padding en dispositivos móviles */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* Reduce el tamaño de los títulos de sección */
+    }
+
+    .description-text, .styled-quote {
+        font-size: 1rem; /* Reduce el tamaño de la fuente para párrafos y citas */
+    }
+}
