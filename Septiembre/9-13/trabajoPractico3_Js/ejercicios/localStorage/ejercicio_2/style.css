@@ -1,0 +1,12 @@
+.campo-habilitado {
+    background-color: lightgreen;
+    border: 2px solid green;
+  }
+  .campo-deshabilitado {
+    background-color: rgb(201, 111, 111);
+    border: 2px solid red;
+
+  }
+  .campo-deshabilitado :hover{
+   cursor:none;
+  }
