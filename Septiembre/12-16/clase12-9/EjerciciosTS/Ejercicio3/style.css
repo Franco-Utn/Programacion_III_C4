@@ -1,0 +1,15 @@
+#area-movimiento {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+#cubo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    top: 0;
+    left: 0;
+}

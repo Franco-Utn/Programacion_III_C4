@@ -1,0 +1,186 @@
+/*---GENERALES---*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik",sans-serif;
+  user-select: none;
+
+}
+/*---HEADER---*/
+.container_principalHeader{
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(113, 113, 204);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container_contentHeader{
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+.headerSearch{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vh;
+}
+.inputHeader{
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  font-size: 1.6vh;
+  width: 20vw;
+  height: 2vh;
+}
+.buttonSearch{
+  border: 1px white solid;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 11vw;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s ease;
+
+}
+.buttonSearch:hover{
+  cursor: pointer;
+  background-color: rgba(149, 149, 218, 0.76);
+}
+.header__buttonAdd{
+  width: 19vw;
+  padding: 0.4rem;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.header__buttonAdd:hover{
+  cursor: pointer;
+  background-color: rgba(149, 149, 218, 0.76);
+}
+/*---MAIN---*/
+.container__view{
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr; /* El 80% para la tienda y 20% para el menú */
+  
+}
+
+.listAside{
+ height: 92vh;
+}
+
+/*---STORE---*/
+.store{
+ background-color: rgb(177, 70, 180);
+ height: 92vh;
+}
+/*---LISTASIDE---*/
+.listAside{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.listAside h2{
+  display: flex;
+  font-size: 2.8vh;
+  margin-top: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+.listAside ul{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2vh;
+  display:flex ;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content:space-around ;
+  gap: 1vh;
+}
+.listAside ul li{
+  font-size: 2vh;
+  font-weight: 450;
+}
+.listAside ul li:hover{
+ cursor: pointer;
+}
+
+.liActive{
+  background-color: rgb(113, 113, 204);
+  color: white;
+  padding: 0.2rem;
+  outline: none;
+}
+
+/*---POPUP---*/
+.popUpContainer__principal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+
+}
+.popUpContainer{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 5px 2px 10px 2px rgba(0, 0, 0.3);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.containerTitlePopUp{
+  width: 100%;
+  text-align: center;
+}
+.containerInputs__popUp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+.containerInputs__popUp input,
+.containerInputs__popUp select{
+  width: 60%;
+  border-radius: 0.4rem;
+  border: 1px solid gray;
+  padding: 0.4rem;
+}
+.containerButtonPopUp{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.buttonPopUp{
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 2vh;
+}
+.cancel{
+  background-color: rgb(231, 231, 50);
+}
+.accept{
+  background-color: rgb(93, 160, 62);
+}
+.delete{
+  background-color: rgba(247, 22, 6, 0.877);
+}
